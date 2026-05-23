@@ -1,66 +1,47 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="The Park is coming soon.">
-    <title>The Park</title>
-    <style>
-      :root {
-        color: #000;
-        background: #fff;
-        font-family: Impact, Haettenschweiler, "Arial Black", "Franklin Gothic Heavy", sans-serif;
-      }
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>THE PARK</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: #fff;
+      color: #000;
+    }
 
-      * {
-        box-sizing: border-box;
-      }
+    body {
+      display: grid;
+      min-height: 100vh;
+      place-items: center;
+      font-family: Impact, Haettenschweiler, "Arial Black", sans-serif;
+      text-align: center;
+    }
 
-      html,
-      body {
-        min-height: 100%;
-        margin: 0;
-      }
+    h1 {
+      margin: 0;
+      font-size: clamp(64px, 18vw, 240px);
+      font-weight: 900;
+      line-height: 0.85;
+      letter-spacing: 0;
+    }
 
-      body {
-        display: grid;
-        min-height: 100vh;
-        place-items: center;
-        background: #fff;
-        color: #000;
-      }
-
-      main {
-        width: min(92vw, 1200px);
-        text-align: center;
-      }
-
-      h1 {
-        margin: 0;
-        color: #000;
-        font-size: clamp(4.5rem, 18vw, 15rem);
-        font-weight: 900;
-        line-height: 0.82;
-        letter-spacing: 0;
-        text-transform: uppercase;
-      }
-
-      p {
-        margin: 1.5rem 0 0;
-        color: #000;
-        font-family: "Arial Black", Impact, Haettenschweiler, sans-serif;
-        font-size: clamp(1.1rem, 3.2vw, 2.6rem);
-        font-weight: 900;
-        letter-spacing: 0;
-        line-height: 1;
-        text-transform: uppercase;
-      }
-    </style>
-  </head>
-  <body>
-    <main aria-label="The Park announcement">
-      <h1>THE PARK ..</h1>
-      <p>coming soon</p>
-    </main>
-  </body>
+    p {
+      margin: 22px 0 0;
+      font-size: clamp(18px, 4vw, 48px);
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: 0;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>THE PARK ..</h1>
+    <p>coming soon</p>
+  </main>
+</body>
 </html>
